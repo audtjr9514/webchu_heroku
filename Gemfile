@@ -6,7 +6,6 @@ gem 'devise'
 gem 'rails', '4.2.8'
 # Use sqlite3 as the database for Active Record
 
-gem 'sqlite3', '~> 1.3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -38,6 +37,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'rails_db'
+  gem 'sqlite3', '~> 1.3.11'
 end
 
 group :development do
@@ -49,6 +49,7 @@ group :development do
 end
 
 group :production do
+  gem 'sqlite3', '~> 1.3.11'
   gem 'pg'
   gem 'rails_12factor'
 end
